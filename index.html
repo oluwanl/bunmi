@@ -136,9 +136,9 @@ section.alt .card-s{background:var(--cream)}
 .gallery .eye{color:var(--gold-l)}
 .gallery .orn{color:var(--gold-l)}
 .gallery .lede{color:rgba(249,246,240,.75)}
-.grid{columns:2;column-gap:12px}
-.grid button{display:block;width:100%;margin-bottom:12px;padding:0;border:0;background:none;cursor:zoom-in;overflow:hidden;border-radius:var(--r)}
-.grid img{width:100%;height:auto;transition:transform .6s}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.grid button{display:block;width:100%;aspect-ratio:4/5;padding:0;border:0;background:none;cursor:zoom-in;overflow:hidden;border-radius:var(--r)}
+.grid img{width:100%;height:100%;object-fit:cover;object-position:center 25%;transition:transform .6s}
 .grid button:hover img{transform:scale(1.03)}
 dialog{border:0;background:none;max-width:92vw;max-height:92vh;margin:auto;overflow:visible}
 dialog::backdrop{background:rgba(20,5,8,.9)}
@@ -197,7 +197,7 @@ footer small{display:block;margin-top:8px;font-size:.7rem;opacity:.6}
   .rsvp{padding:40px 20px}
   .person div{justify-content:center}
 }
-@media(max-width:400px){.brand{font-size:1.05rem}.hero h1{font-size:2.5rem}.grid{column-gap:6px}.grid button{margin-bottom:6px}}
+@media(max-width:400px){.brand{font-size:1.05rem}.hero h1{font-size:2.5rem}.grid{gap:6px}}
 </style>
 </head>
 <body>
@@ -225,7 +225,7 @@ footer small{display:block;margin-top:8px;font-size:.7rem;opacity:.6}
 </div>
 
 <header class="hero" id="top">
-  <div class="hero-photo"><img src="https://i.ibb.co/v6Lt1dYB/IMG-0859.jpg" alt="Oluwabunmi and Oluwatobi"></div>
+  <div class="hero-photo"><img src="https://i.ibb.co/svx6kThp/Whats-App-Image-2026-10-03-at-07-23-11.jpg" alt="Oluwabunmi and Oluwatobi"></div>
   <div class="hero-text">
     <span class="eye">Together with their families</span>
     <h1>Oluwabunmi <i>and</i> Oluwatobi</h1>
@@ -340,8 +340,13 @@ footer small{display:block;margin-top:8px;font-size:.7rem;opacity:.6}
       <p class="lede">A few moments from the journey so far.</p>
     </header>
     <div class="grid reveal">
+      <button type="button"><img src="https://i.ibb.co/v6Lt1dYB/IMG-0859.jpg" alt="Oluwabunmi and Oluwatobi" loading="lazy"></button>
       <button type="button"><img src="https://i.ibb.co/tw2XYYBj/IMG-0856.jpg" alt="Oluwabunmi and Oluwatobi" loading="lazy"></button>
       <button type="button"><img src="https://i.ibb.co/ynnFbTsd/IMG-0855.jpg" alt="Oluwabunmi and Oluwatobi" loading="lazy"></button>
+      <button type="button"><img src="https://i.ibb.co/WWn4yJGm/IMG-0877.jpg" alt="Oluwabunmi and Oluwatobi" loading="lazy"></button>
+      <button type="button"><img src="https://i.ibb.co/KxkkBTNx/IMG-0876.jpg" alt="Oluwabunmi and Oluwatobi" loading="lazy"></button>
+      <button type="button"><img src="https://i.ibb.co/V0p29qKb/IMG-0875.jpg" alt="Oluwabunmi and Oluwatobi" loading="lazy"></button>
+      <button type="button"><img src="https://i.ibb.co/67707F0R/IMG-0874.jpg" alt="Oluwabunmi and Oluwatobi" loading="lazy"></button>
     </div>
   </div>
 </section>
